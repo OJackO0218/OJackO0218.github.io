@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Athar Rozy Rasyidan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <section id="hero">
-    <h1>Hi, I'm <span class="highlight">Athar</span> 👋</h1>
-    <p>CS Student · Aspiring Developer · Tea Enthusiast</p>
-    <a href="#projects" class="btn">See My Work</a>
-  </section>
+    <!-- Main Container Box covering all content -->
+    <div class="main-box">
+        
+        <header>
+            <h1>Portfolio</h1>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate student who loves building things for the web.
-       I enjoy solving problems and learning new technologies.</p>
-  </section>
+        <section class="intro">
+            <h2>Hi, I'm Athar Rozy Rasyidan</h2>
+            <p>I'm an Informatics student who loves games and is currently interested in learning web development and game programming. I enjoy building 2D mini-games like platformers or just about anything I find fun</p>
+        </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span class="skill">HTML</span>
-      <span class="skill">CSS</span>
-      <span class="skill">C</span>
-      <span class="skill">Python</span>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+                <button class="filter-btn" onclick="filterProjects('games')">Games</button>
+                <button class="filter-btn" onclick="filterProjects('web')">Web</button>
+            </div>
+
+            <div class="project-list">
+                <div class="project-card" data-category="games">
+                    <h3>Square Escape</h3>
+                    <p>A 2D action platformer.</p>
+                    <a href="https://github.com/OJackO0218/Cube-Escape">View Game →</a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <h3>Web Portfolio</h3>
+                    <p>My Web Portfolio.</p>
+                    <a href="https://github.com/OJackO0218/OJackO0218.github.io">View Site →</a>
+                </div>
+
+                <div class="project-card" data-category="games">
+                    <h3>TBA</h3>
+                    <p>TBA</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Godot</li>
+                <li>C</li>
+                <li>English C1</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Feel free to reach out!</p>
+            <p>Email: <a href="mailto:atharrasyidans@gmail.com" style="color: #f7f8f9;">atharrasyidans@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/08118303080" style="color: #f7f8f9;">+62 811-830-3080</a></p>
+        </section>
+
+        <footer>
+            <p>© 2026 Athar R. Built with HTML, CSS &amp; JS.</p>
+        </footer>
+
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>🔥 Cool Project Name</h3>
-      <p>Brief description of what it does and what you learned.</p>
-      <a href="https://github.com/OJackO0218.com">View on GitHub →</a>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>📧 <a href="mailto:atharrasyidans@gmail.com">you@email.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/athar-rozy-rasyidan-433670377/">LinkedIn</a></p>
-  </section>
-
+    <script src="javascript.js"></script>
 </body>
 </html>
