@@ -1,68 +1,158 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #0f0f0f;
-  color: #eee;
-  scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+    background-image: url('web background.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #0d0f12;
+
+    color: #d1d5db;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
 }
 
-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 60px 20px;
+/* MAIN CONTAINER BOX */
+.main-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(18, 22, 28, 0.92);
+    backdrop-filter: blur(8px);
+    border: 1px solid #2b3240;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
-h1 { font-size: 3rem; margin-bottom: 1rem; }
-h2 { font-size: 2rem; margin-bottom: 1.5rem; }
-
-.highlight { color: #6c63ff; }
-
-.btn {
-  background: #6c63ff;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1.5rem;
-  display: inline-block;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(108,99,255,0.4);
+/* Header & Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2b3240;
 }
 
-.skills-grid {
-  display: flex; flex-wrap: wrap;
-  gap: 12px; justify-content: center;
+header h1 {
+    font-size: 1.5rem;
+    color: #56c8d8;
+    margin: 0;
 }
-.skill {
-  background: #1e1e2e;
-  border: 1px solid #6c63ff;
-  padding: 8px 20px;
-  border-radius: 999px;
-  font-size: 0.9rem;
+
+nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e5b842;
+}
+
+/* Intro Section */
+.intro {
+    margin: 25px 0;
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #9ca3af;
+}
+
+/* Projects Section */
+.section-title {
+    font-size: 1.2rem;
+    color: #e5b842;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #2b3240;
+    padding-bottom: 5px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: #141820;
+    color: #9ca3af;
+    border: 1px solid #2b3240;
+    padding: 6px 14px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #56c8d8;
+    color: #121418;
+    border-color: #56c8d8;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .project-card {
-  background: #1e1e2e;
-  border: 1px solid #333;
-  border-radius: 16px;
-  padding: 24px;
-  max-width: 500px;
-  text-align: left;
-  transition: transform 0.2s;
+    background: #141820;
+    border: 1px solid #2b3240;
+    border-radius: 6px;
+    padding: 16px;
 }
-.project-card:hover { transform: translateY(-4px); }
-.project-card h3 { margin-bottom: 0.5rem; }
+
+.project-card h3 {
+    margin: 0 0 5px 0;
+    color: #f3f4f6;
+    font-size: 1.05rem;
+}
+
+.project-card p {
+    margin: 0 0 10px 0;
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
 .project-card a {
-  color: #6c63ff; text-decoration: none;
-  font-weight: bold; margin-top: 12px;
-  display: inline-block;
+    color: #56c8d8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #141820;
+    border: 1px solid #2b3240;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #d1d5db;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #2b3240;
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.85rem;
 }
